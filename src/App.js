@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Teste instaclone reinstalado modules e dependencias</Text>
+      <Text>Teste instaclone dependencia redux</Text>
     </View>
   );
 }
