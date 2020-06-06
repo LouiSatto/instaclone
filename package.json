@@ -20,15 +20,16 @@
     "react-navigation": "^2.14.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "expo-font": "~8.1.0"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.1.0",
     "@babel/core": "^7.8.6"
   },
-  "rnpm":{
+  "rnpm": {
     "assets": [
-        ".assets/fonts/"
+      ".assets/fonts/"
     ]
   },
   "private": true
