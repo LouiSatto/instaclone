@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react'
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Teste instaclone dependencia redux</Text>
-    </View>
+    <Header/>
+    // <View style={styles.container}>
+    //   <Header/>      
+    //   <Text>Teste instaclone dependencia redux </Text>
+    // </View>
   );
 }
 
@@ -17,3 +20,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <Header/>
+//     )
+//   }
+// }
+
+
+
