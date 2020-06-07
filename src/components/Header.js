@@ -9,40 +9,40 @@ import {
 import icon from '../../assets/imgs/icon.png'
 import * as Font from 'expo-font'
 
+import Post from './Post'
+
 
 class Header extends Component {
 
-    state = {
-        fontLoaded: false
-      }
+    // state = {
+    //     fontLoaded: false
+    //   }
     
-      async componentDidMount () {
-        await this._loadAssets()
-      }
+    //   async componentDidMount () {
+    //     await this._loadAssets()
+    //   }
       
-      async _loadAssets () {
-        await Font.loadAsync({
-          'shelter': require('../../assets/fonts/shelter.otf'),
-        })
-        console.log('your fonts loaded!')
-        this.setState({fontLoaded: true})
-      }
+    //   async _loadAssets () {
+    //     await Font.loadAsync({
+    //       'shelter': require('../../assets/fonts/shelter.otf'),
+    //     })
+    //     console.log('your fonts loaded!')
+    //     this.setState({fontLoaded: true})
+    //   }
     
     render() {
         return (
-            // <Text>teste</Text>
             <View style={styles.container}>
                 <View style={styles.rowContainer}>
                     <Image source={icon} style={styles.image} />
                     <Text style={styles.title}>InstaClone</Text>
                 </View>
+                <Post image='../../assets/imgs/fence.jpg' />
             </View>
         )
     }
 }
-// const styles = StyleSheet.create({
 
-// })
 const styles = StyleSheet.create({
     container: {
         marginTop: Platform.OS === 'ios' ? 20 : 0,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#000',
-        fontFamily: 'shelter',
+        // fontFamily: 'shelter',
         height: 30,
         fontSize: 28
     }
