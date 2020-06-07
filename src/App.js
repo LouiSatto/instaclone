@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header'
+import Post from './components/Post'
 
 export default function App() {
   return (
-    <Header/>
-    // <View style={styles.container}>
-    //   <Header/>      
-    //   <Text>Teste instaclone dependencia redux </Text>
-    // </View>
+    <View style={{flex: 1}}>
+      <Header/>
+      <Post image={require('../assets/imgs/fence.jpg')} />
+    </View>
   );
 }
 
@@ -20,15 +20,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
-
-// export default class App extends Component {
-//   render() {
-//     return (
-//       <Header/>
-//     )
-//   }
-// }
-
-
-

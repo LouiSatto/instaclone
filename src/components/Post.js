@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import {View, Text, Image, StyleSheet} from 'react-native'
+import {View, Text, Image, StyleSheet, Dimensions} from 'react-native'
 
 class Post extends Component {
-    Render() {
+    render() {
         return (
             <View style = {styles.container}>
                 <Image style = {styles.image} source = {this.props.image}></Image>
@@ -13,11 +13,17 @@ class Post extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        margin: 10
+        flex: 1,
+        // backgroundColor: 'blue'
     },
 
     image: {
-        flex: 1
+        // flex: 1,
+        // backgroundColor: 'red',
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').width * 3/4,
+        resizeMode: 'contain'
+        
     }
 })
 
