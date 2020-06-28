@@ -35,7 +35,7 @@ class Header extends Component {
             <View style={styles.container}>
                 <View style={styles.rowContainer}>
                     <Image source={icon} style={styles.image} />
-                    <Text style={styles.title}>InstaClone</Text>
+                    <Text style={styles.title}>SattoGram</Text>
                 </View>
             </View>
         )
