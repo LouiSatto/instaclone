@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
         padding: 3,
         borderBottomWidth: 1,
         borderColor: '#BBB',
-        backgroundColor: '#eee'
+        backgroundColor: '#eee',
+        width: '100%'
 
     },
     rowContainer: {
@@ -62,7 +63,8 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#000',
-        fontFamily: 'shelter',
+        // fontFamily: 'shelter',
+        fontFamily: 'SnellRoundhand',
         height: 30,
         fontSize: 28
     }

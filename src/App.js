@@ -3,6 +3,7 @@ import {View} from 'react-native';
 
 import Header from './components/Header'
 import Post from './components/Post'
+import Feed from './screens/Feed'
 
 export default function App() {
 
@@ -15,8 +16,11 @@ export default function App() {
   }]
   return (
     <View style={{flex: 1, backgroundColor: '#000'}}>
-      <Header/>
-      <Post image={require('../assets/imgs/BuildingTrees.jpg')} comments={comments}/>
+      
+      <Feed/>
+      
+      {/* <Header/>
+      <Post image={require('../assets/imgs/BuildingTrees.jpg')} comments={comments}/> */}
       {/* <Post image={require('../assets/imgs/bdt.jpeg')} comments={comments}/> */}
     </View>
   );
